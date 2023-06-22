@@ -21,6 +21,5 @@ def get_sale_menu_keyboard():
     sale_menu_keyboard.insert(InlineKeyboardButton(text="Позавчера", callback_data="sales_before_yesterday"))
     sale_menu_keyboard.insert(InlineKeyboardButton(text="За эту неделю", callback_data="sales_this_week"))
     sale_menu_keyboard.insert(InlineKeyboardButton(text="За этот месяц", callback_data="sales_this_month"))
-    sale_menu_keyboard.insert(InlineKeyboardButton(text="За прошлый месяц", callback_data="sales_month_before"))
 
     return sale_menu_keyboard
