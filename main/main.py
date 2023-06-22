@@ -57,8 +57,8 @@ class StockSalesReport:
             sales_quantity = sum(i.get('quantity') for i in sales.get('series'))
 
             if sales_sum != 0 and sales_quantity != 0:
-                return f"За период c {self.moment_from} по {self.moment_to}\nчеков: {sales_quantity} шт., " \
-                       f"на сумму {sales_sum} руб."
+                return f"За период c {self.moment_from} по {self.moment_to}\nчеков: {sales_quantity}  " \
+                       f"на сумму {sales_sum} THB"
             else:
                 return f"За период c {self.moment_from} по {self.moment_to} продаж не было"
 
